@@ -22,10 +22,10 @@ _,m_train = X_train.shape
 
 
 def init_params():
-    W1 = np.random.rand(10, 784) - 0.5
-    b1 = np.random.rand(10, 1) - 0.5
-    W2 = np.random.rand(10, 10) - 0.5
-    b2 = np.random.rand(10, 1) - 0.5
+    W1 = np.random.normal(size=(10, 784)) * np.sqrt(1./(784))
+    b1 = np.random.normal(size=(10, 1)) * np.sqrt(1./10)
+    W2 = np.random.normal(size=(10, 10)) * np.sqrt(1./20)
+    b2 = np.random.normal(size=(10, 1)) * np.sqrt(1./(784))
     return W1, b1, W2, b2
 
 
@@ -34,8 +34,10 @@ def ReLU(Z):
 
 
 def softmax(Z):
-    A = np.exp(Z) / sum(np.exp(Z))
+    Z -= np.max(Z, axis=0)  # Subtract max value for numerical stability
+    A = np.exp(Z) / np.sum(np.exp(Z), axis=0)
     return A
+
 
 
 def forward_prop(W1, b1, W2, b2, X):
@@ -63,6 +65,9 @@ def backward_prop(Z1, A1, Z2, A2, W1, W2, X, Y):
     dW1 = 1 / m * dZ1.dot(X.T)
     db1 = 1 / m * np.sum(dZ1)
     return dW1, db1, dW2, db2
+
+
+
 
 def update_params(W1, b1, W2, b2, dW1, db1, dW2, db2, alpha):
     W1 = W1 - alpha * dW1
