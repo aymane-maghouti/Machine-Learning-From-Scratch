@@ -95,7 +95,7 @@ Otherwise, this is the repository tree:
 
 ## Getting Started
 
-1. Clone this repository: `git clone https://github.com/your-username/Machine-Learning-From-Scratch.git`
+1. Clone this repository: `git clone https://github.com/aymane-maghouti/Machine-Learning-From-Scratch.git`
 
 2. Navigate to the project directory: `cd Machine-Learning-From-Scratch`
 
