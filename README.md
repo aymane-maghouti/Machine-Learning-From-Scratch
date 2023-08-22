@@ -62,21 +62,31 @@ This project implements various machine learning algorithms from scratch using P
 
 
 Otherwise, this is the repository tree:
-
-- **/Classification**
-  - **/KNN**
-  - **/LogisticRegression**
-  - **/NaiveBayes**
-
-- **/Clustering**
-  - **/KMeans**
-
-- **/NeuralNetwork**
-  - **/Perceptron**
-  - **/NeuralNetwork**
-
-- **/Regression**
-  - **/LinearRegression**
+├───Classification
+│   ├───KNN
+│   │   └───KNN.py
+│   │   └───Example.py
+│   ├───LogisticRegression
+│   │   └───LogisticRegression,py
+│   │   └───Example.py
+│   └───Naive Bayes
+│       └───NaiveBayes.py
+│   │   └───Example.py
+├───Clustering
+│   └───KMeans
+│       └───KMeans.py
+│   │   └───Exampl.py
+├───Neural Network
+│   ├───Neural Network
+│   │   └───NeuralNetwork.py
+│   │   └───train_dataset.csv
+│   └───Perceptron
+│       └───Perceptron.py
+│   │   └───Example.py
+└───Regression
+    └───LinearRegression
+│   │   └───LinearRegression.py
+        └───Example.py
 
 
 ## Getting Started
