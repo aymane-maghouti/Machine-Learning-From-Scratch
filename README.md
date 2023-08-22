@@ -60,6 +60,25 @@ This project implements various machine learning algorithms from scratch using P
 - **README.md**
   - The main documentation file (this file) that provides an overview of the project, algorithms, and instructions for usage.
 
+
+Otherwise, this is the repository tree:
+
+- **/Classification**
+  - **/KNN**
+  - **/LogisticRegression**
+  - **/NaiveBayes**
+
+- **/Clustering**
+  - **/KMeans**
+
+- **/NeuralNetwork**
+  - **/Perceptron**
+  - **/NeuralNetwork**
+
+- **/Regression**
+  - **/LinearRegression**
+
+
 ## Getting Started
 
 1. Clone this repository: `git clone https://github.com/your-username/Machine-Learning-From-Scratch.git`
