@@ -62,6 +62,9 @@ This project implements various machine learning algorithms from scratch using P
 
 
 Otherwise, this is the repository tree:
+
+``` bash
+
 ├───Classification
 │   ├───KNN
 │   │   └───KNN.py
@@ -88,6 +91,7 @@ Otherwise, this is the repository tree:
 │   │   └───LinearRegression.py
         └───Example.py
 
+```
 
 ## Getting Started
 
